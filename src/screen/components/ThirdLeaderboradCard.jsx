@@ -65,14 +65,15 @@ const ThirdLeaderboardCard = ({ data, type }) => {
                     </>
                   ) : (
                     <>
+                     <div className="flex align-center pl-5">
+                        <CiDollar style={{ fontSize: "25", color: "#1f7bc1" }} />
+                        <span>{item.dealAverage ?? "N/A"}</span>
+                      </div>
                       <div className="flex align-center pl-5">
                         <BsCash style={{ fontSize: "25", color: "#1f7bc1" }} />
                         <span>{item.commission ?? "N/A"}</span>
                       </div>
-                      <div className="flex align-center pl-5">
-                        <CiDollar style={{ fontSize: "25", color: "#1f7bc1" }} />
-                        <span>{item.dealAverage ?? "N/A"}</span>
-                      </div>
+                     
                       <div className="flex align-center label-image">
                         <MdLabelOutline style={{ fontSize: "25", color: "#1f7bc1" }} />
                         <span>{item.closed ?? "N/A"}</span>
